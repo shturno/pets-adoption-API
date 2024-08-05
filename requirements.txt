@@ -7,3 +7,4 @@ pylint==3.2.6
 tomli
 tomlkit==0.13.0
 typing-extensions
+SQLAlchemy
