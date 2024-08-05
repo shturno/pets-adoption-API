@@ -7,6 +7,9 @@ disable=
     C0115,  # Missing class docstring
     C0116,  # Missing function or method docstring
     C0209,  # Consider using f-string
+    C0303,  # Trailing whitespace
+    C0304,  # Final newline missing
+    C0411,  # wrong-import-order
     E0015,  # unrecognized option
     R0903,  # Too few public methods
     R0913,  # Too many arguments
@@ -17,35 +20,6 @@ disable=
     R0902,  # Too many instance attributes
     R0904,  # Too many public methods
     R1705,  # Unnecessary "else" after "return"
-    W0511,  # TODO
-    W0512,  # FIXME
-    W0513,  # XXX
-    W0514,  # HACK
-    W0515,  # NOTE
-    W0611,  # Unused import
-    W0612,  # Unused variable
-    W0613,  # Unused argument
-    W0614,  # Unused wildcard import
-    W0616,  # Unused variable
-    W0621,  # Redefining name from outer scope
-    W0622,  # Redefining built-in
-    W0623,  # Redefining name from object
-    W0626,  # Redefining built-in
-    W0631,  # Using possibly undefined loop variable
-    W0632,  # Possible unbalanced tuple unpacking with sequence
-    W0633,  # Attempting to unpack a non-sequence
-    W0634,  # Using an undefined loop variable
-    W0635,  # Attempting to unpack a non-iterable
-    W0636,  # Using possibly undefined loop variable
-    W0637,  # Using possibly undefined loop variable
-    W0638,  # Using possibly undefined loop variable
-    W0639,  # Using possibly undefined loop variable
-    W0640,  # Using possibly undefined loop variable
-    W0641,  # Using possibly undefined loop variable
-    W0642,  # Using possibly undefined loop variable
-    W0643,  # Using possibly undefined loop variable
-    W0644,  # Using possibly undefined loop variable
-    W0645  # Using possibly
     W0703 # Catching too general exception Exception
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
