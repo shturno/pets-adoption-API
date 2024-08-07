@@ -16,10 +16,10 @@ class PetsRepository(PetsRepositoryInterface):
                 return []
                 
                 
-    def delete_pets(self, pet_name:str) -> None:
+    def delete_pets(self, pet:str) -> None:
         with self.__db_connection as database:
             try:
-                pet = database.session.query(PetsTable).filter(PetsTable.pet_name == pet_name).delete()
+                pet = database.session.query(PetsTable).filter(PetsTable.pet_name == pet).delete()
                 database.session.commit()
             except Exception as exception:
                 database.session.rollback()

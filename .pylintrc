@@ -25,9 +25,11 @@ disable=
     R0902,  # Too many instance attributes
     R0904,  # Too many public methods
     R1705,  # Unnecessary "else" after "return"
+    W0237,  # arguments-renamed
     W0238,  # Unused private member
     W0612,  # Unused variable
-    W0703, # Catching too general exception Exception
+    W0703,  # Catching too general exception Exception
+    W0719,  # Raising too general exception
     W1114  # Positional arguments appears to be out of order
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists

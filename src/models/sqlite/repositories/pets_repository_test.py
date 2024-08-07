@@ -11,8 +11,8 @@ class MockConnection:
             data=[
                 (
                     [mock.call.query(PetsTable)], #query
-                    [PetsTable(name="dog", type="dog"),
-                     PetsTable(name="cat", type="cat")
+                    [PetsTable(pet_name="dog", type="dog"),
+                     PetsTable(pet_name="cat", type="cat")
                     ]  #return
                 )
             ]
@@ -41,7 +41,7 @@ def test_list_pets():
     mock_connection.session.all.assert_called_once()
     mock_connection.session.filter.assert_not_called()
     
-    assert response[0].name == "dog"
+    assert response[0].pet_name == "dog"
         
         
 def test_delete_pet():
@@ -50,7 +50,7 @@ def test_delete_pet():
     response = repo.delete_pets("petName")
     
     mock_connection.session.query.assert_called_once_with(PetsTable)
-    mock_connection.session.filter.assert_called_once_with(PetsTable.name == "petName")
+    mock_connection.session.filter.assert_called_once_with(PetsTable.pet_name == "petName")
     mock_connection.session.delete.assert_called_once()
     
 def test_list_pets_no_result():
