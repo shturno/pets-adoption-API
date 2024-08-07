@@ -12,6 +12,7 @@ disable=
     C0304,  # Final newline missing
     C0321,  # More than one statement on a single line
     C0411,  # wrong-import-order
+    C0412,   # ungrouped-imports
     E0015,  # unrecognized option
     E0102,  # function redefined
     E1111,  # assignment to function call
@@ -24,6 +25,7 @@ disable=
     R0902,  # Too many instance attributes
     R0904,  # Too many public methods
     R1705,  # Unnecessary "else" after "return"
+    W0238,  # Unused private member
     W0612,  # Unused variable
     W0703, # Catching too general exception Exception
     W1114  # Positional arguments appears to be out of order

@@ -1,8 +1,9 @@
 from typing import List
 from src.models.sqlite.entities.pets import PetsTable
 from sqlalchemy.orm.exc import NoResultFound
+from src.models.sqlite.interfaces.pets_repository import PetsRepositoryInterface
 
-class PetsRepository:
+class PetsRepository(PetsRepositoryInterface):
     def __init__(self, db_connection) -> None:
         self.__db_connection = db_connection
         
@@ -15,10 +16,10 @@ class PetsRepository:
                 return []
                 
                 
-    def delete_pets(self, name:str) -> None:
+    def delete_pets(self, pet_name:str) -> None:
         with self.__db_connection as database:
             try:
-                pet = database.session.query(PetsTable).filter(PetsTable.name == name).delete()
+                pet = database.session.query(PetsTable).filter(PetsTable.pet_name == pet_name).delete()
                 database.session.commit()
             except Exception as exception:
                 database.session.rollback()
