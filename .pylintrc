@@ -7,10 +7,13 @@ disable=
     C0115,  # Missing class docstring
     C0116,  # Missing function or method docstring
     C0209,  # Consider using f-string
+    C0301,  # Line too long
     C0303,  # Trailing whitespace
     C0304,  # Final newline missing
+    C0321,  # More than one statement on a single line
     C0411,  # wrong-import-order
     E0015,  # unrecognized option
+    E0102,  # function redefined
     R0903,  # Too few public methods
     R0913,  # Too many arguments
     R0914,  # Too many local variables
@@ -20,6 +23,7 @@ disable=
     R0902,  # Too many instance attributes
     R0904,  # Too many public methods
     R1705,  # Unnecessary "else" after "return"
+    W0612,  # Unused variable
     W0703 # Catching too general exception Exception
 # Analyse import fallback blocks. This can be used to support both Python 2 and
 # 3 compatible code, which means that the block might have code that exists
