@@ -52,6 +52,10 @@ To start the Flask server, run: python3 run.py
 
 To run the tests, use the following command: pytest -s -v
 
+## Web Service
+
+To run the project without installing it, access https://pets-adoption-5o9i.onrender.com/ and use the routes on src/main/routes 
+
 ## Contributing
 
 If you would like to contribute to the project, please fork the repository, make your changes, and submit a pull request. Ensure that your commits are well-documented and that tests pass.
