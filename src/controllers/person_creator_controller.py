@@ -33,7 +33,6 @@ class PersonCreatorController(PersonCreatorControllerInterface):
         return {
             "data": {
                 "type": "person",
-                "id": person_info['id'],
                 "attributes": person_info
             }
         }

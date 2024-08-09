@@ -9,7 +9,7 @@ class PetListerController(PetListerControllerInterface):
         
         
     def list(self) -> dict:
-        pets = self.__get_pets_in_db
+        pets = self.__get_pets_in_db()
         response = self.__format_response(pets)
         
         return response
@@ -25,7 +25,7 @@ class PetListerController(PetListerControllerInterface):
             formated_pets.append({
                 "id": pet.id,
                 "attributes": {
-                    "name": pet.name,
+                    "name": pet.pet_name,
                     "type": pet.type
                 }
             })
