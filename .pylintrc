@@ -16,6 +16,7 @@ disable=
     E0015,  # unrecognized option
     E0102,  # function redefined
     E1111,  # assignment to function call
+    R0801,  # Similar lines in 2 files
     R0903,  # Too few public methods
     R0913,  # Too many arguments
     R0914,  # Too many local variables
