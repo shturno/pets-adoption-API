@@ -60,8 +60,9 @@ To run the project without installing it, access https://pets-adoption-5o9i.onre
 
 If you would like to contribute to the project, please fork the repository, make your changes, and submit a pull request. Ensure that your commits are well-documented and that tests pass.
 
+## Author
+@shturno
+
 ## Contact
 
-- Author: Gabriela Alvarenga
-- Email: gabrielasalvarenga2@gmail.com
-- GitHub: gabrieladsalv
+You can contact me at [email](mailto:gabriel.dsalvarenga@gmail.com)
